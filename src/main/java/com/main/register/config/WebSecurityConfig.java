@@ -5,6 +5,7 @@ import com.main.register.component.MyAccessDeniedHandler;
 import com.main.register.component.MyFilterInvocationSecurityMetadataSource;
 import com.main.register.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.authentication.DisabledException;
@@ -47,6 +48,9 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 	@Autowired
 	MyAccessDeniedHandler myAccessDeniedHandler;
 
+	@Value("${server.servlet.context-path}")
+	String context_path;
+
 	/**
 	 * 定义认证用户信息获取来源，密码校验规则等
 	 */
@@ -54,12 +58,14 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 	protected void configure(AuthenticationManagerBuilder auth) throws Exception {
 		/**有以下几种形式，使用第3种*/
 		//inMemoryAuthentication 从内存中获取
-		//auth.inMemoryAuthentication().passwordEncoder(new BCryptPasswordEncoder()).withUser("user1").password(new BCryptPasswordEncoder().encode("123123")).roles("USER");
+		//auth.inMemoryAuthentication().passwordEncoder(new BCryptPasswordEncoder()).withUser("user1").password(new
+		// BCryptPasswordEncoder().encode("123123")).roles("USER");
 
 		//jdbcAuthentication从数据库中获取，但是默认是以security提供的表结构
 		//usersByUsernameQuery 指定查询用户SQL
 		//authoritiesByUsernameQuery 指定查询权限SQL
-		//auth.jdbcAuthentication().dataSource(dataSource).usersByUsernameQuery(query).authoritiesByUsernameQuery(query);
+		//auth.jdbcAuthentication().dataSource(dataSource).usersByUsernameQuery(query).authoritiesByUsernameQuery
+		// (query);
 
 		//注入userDetailsService，需要实现userDetailsService接口
 		auth.userDetailsService(userService).passwordEncoder(new BCryptPasswordEncoder());
@@ -94,7 +100,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 				.permitAll()
 				.failureHandler(new AuthenticationFailureHandler() {
 					@Override
-					public void onAuthenticationFailure(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, AuthenticationException e) throws IOException, ServletException {
+					public void onAuthenticationFailure(HttpServletRequest httpServletRequest, HttpServletResponse
+																									   httpServletResponse, AuthenticationException e) throws IOException, ServletException {
 						httpServletResponse.setContentType("application/json;charset=utf-8");
 						PrintWriter out = httpServletResponse.getWriter();
 						StringBuffer sb = new StringBuffer();
@@ -114,14 +121,16 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 				})
 				.successHandler(new AuthenticationSuccessHandler() {
 					@Override
-					public void onAuthenticationSuccess(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Authentication authentication) throws IOException, ServletException {
-						httpServletResponse.setContentType("application/json;charset=utf-8");
+					public void onAuthenticationSuccess(HttpServletRequest httpServletRequest, HttpServletResponse
+																									   httpServletResponse, Authentication authentication) throws IOException, ServletException {
+						/*httpServletResponse.setContentType("application/json;charset=utf-8");
 						PrintWriter out = httpServletResponse.getWriter();
 //                        ObjectMapper objectMapper = new ObjectMapper();
 						String s = "{\"status\":\"success\",\"msg\":" + "}";
 						out.write(s);
 						out.flush();
-						out.close();
+						out.close();*/
+						httpServletResponse.sendRedirect(context_path + "/index.html");
 					}
 				})
 				.and()

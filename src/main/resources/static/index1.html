@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .nav {
+            background: skyblue;
+            margin-top: 10%;
+            margin-bottom: 10%;
+            text-align: center;
+            line-height: 40px;
+        }
+
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .nav li {
+            width: 100px;
+            height: 40px;
+            background: skyblue;
+
+            float: left;
+            list-style-type: none;
+            width: 100%;
+        }
+
+        .nav > li {
+            float: left;
+            margin-right: 10px;
+        }
+
+        .nav > li:last-child {
+            margin-right: 0;
+        }
+
+        .nav li ul {
+            position: absolute;
+            height: 0;
+            overflow: hidden;
+            transition: height 0.5s;
+        }
+
+    </style>
+</head>
+<body>
+<div>
+    <ul class="nav">
+        <li>
+            <a href="#">网站主页</a>
+        </li>
+        <li id="li1">
+            <a href="#">首页1</a>
+            <ul id="ul1">
+                <li><a href="#">界面设计</a></li>
+                <li><a href="#">界面设计</a></li>
+                <li><a href="#">界面设计</a></li>
+            </ul>
+        </li>
+        <li id="li2">
+            <a href="#">首页2</a>
+            <ul id="ul2">
+                <li><a href="#">界面设计</a></li>
+                <li><a href="#">界面设计</a></li>
+                <li><a href="#">界面设计</a></li>
+            </ul>
+        </li>
+        <li id="li3">
+            <a href="#">首页3</a>
+            <ul id="ul3">
+                <li><a href="#">界面设计</a></li>
+                <li><a href="#">界面设计</a></li>
+                <li><a href="#">界面设计</a></li>
+            </ul>
+        </li>
+
+    </ul>
+    </div>
+</body>
+<script>
+    function nav(liID, ulID) {
+        var oLi = document.getElementById(liID);
+        var oUl = document.getElementById(ulID);
+        oLi.onmouseover = function () {
+            oUl.style.height = '130px';
+        };
+        oLi.onmouseout = function () {
+            oUl.style.height = '0';
+        }
+    }
+    nav('li1', 'ul1');
+    nav('li2', 'ul2');
+    nav('li3', 'ul3');
+</script>
+</html>
