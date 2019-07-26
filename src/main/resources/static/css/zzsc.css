@@ -111,6 +111,7 @@ a:hover {
 }
 
 #nav .mod_cate, #nav .mod_cate2 {
+    width: 83px;
     height: 30px;
     border-top: 1px #5AA1FE solid;
     border-bottom: 1px #3487F2 solid;
@@ -256,7 +257,7 @@ a:hover {
     height: 0px;
     overflow: hidden;
     font-size: 0px;
-    margin: 9px 0 0 5px;
+    margin: 9px -24px 0 5px;
     border: 4px transparent dashed;
     border-left: 4px #FFFFFF solid;
 }
@@ -271,10 +272,11 @@ a:hover {
 }
 
 #nav .on {
-    padding: 8px 10px 9px 8px;
-    border-top: 2px #5AA1FE solid;
-    border-bottom: 2px #3487F2 solid;
-    margin-left: 2px;
+    width: 83px;
+    height: 30px;
+    border-top: 1px #5AA1FE solid;
+    border-bottom: 1px #3487F2 solid;
+    padding: 2px 3px 5px 4px;
     background: #FFFFFF;
 }
 
