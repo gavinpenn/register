@@ -10,7 +10,7 @@
 </head>
 <body style="background-color: #efefef">
 <div>
-    <div class="warpper" style="z-index: 999">
+    <div class="warpper" id="warpper" style="z-index: 999">
         <div id="nav" name="nav">
             <!--<div class="mod_cate_hd">网站主页</div>-->
             <ul class="tit">
@@ -92,7 +92,7 @@
                         <a>银行开户</a></h2>
                     <p class="mod_cate_r">
                         <a href="">新加坡公司</a>
-                        <a href="">香港公司</a>
+                        <!--<a href="">香港公司</a>-->
                     </p>
                     <div class="mod_subcate">
                         <div class="mod_subcate_main">
@@ -120,7 +120,7 @@
                     </h2>
                     <p class="mod_cate_r">
                         <a href="">开曼注册</a>
-                        <a href="">BVI注册</a>
+                        <!--<a href="">BVI注册</a>-->
                     </p>
                     <div class="mod_subcate">
                         <div class="mod_subcate_main">
@@ -183,7 +183,7 @@
                     </h2>
                     <p class="mod_cate_r">
                         <a href="">新加坡公司</a>
-                        <a href="">香港公司</a>
+                        <!--<a href="">香港公司</a>-->
                     </p>
                     <div class="mod_subcate">
                         <div class="mod_subcate_main">
@@ -206,11 +206,11 @@
                 <li class="mod_cate">
                     <h2>
                         <i class="arrow_dot fr"></i>
-                        <a href="">金融牌照</a>
+                        <a>金融牌照</a>
                     </h2>
                     <p class="mod_cate_r">
                         <a href="">美国NFA牌照</a>
-                        <a href="">新西兰FSP牌照</a>
+                        <!--<a href="">新西兰FSP牌照</a>-->
                     </p>
                     <div class="mod_subcate">
                         <div class="mod_subcate_main">
@@ -237,12 +237,12 @@
                 </li>
                 <li class="mod_cate">
                     <h2><i class="arrow_dot fr"></i>
-                        <a href="">知识产权</a>
+                        <a>知识产权</a>
                     </h2>
                     <p class="mod_cate_r">
                         <a href="">商标</a>
                         <a href="">专利</a>
-                        <a href="">条形码</a>
+                        <!--<a href="">条形码</a>-->
                     </p>
                     <div class="mod_subcate">
                         <div class="mod_subcate_main">
@@ -269,45 +269,48 @@
                 </li>
             </ul>
         </div>
-        <div id="nav" name="nav1" style="display: none;;height: 35px">
-            <ul class="tit">
-                <li class="mod_cate">
-                    <h2 style="line-height: 18px" align="center">
-                        <a>展开我公司主营业务</a>
-                    </h2>
-                </li>
-            </ul>
+        <div name="nav1" onclick="fold()" style="display: none;">
+            <div   style="display:inline ;border:3px solid #4a8fd6;border-radius:0px 50px 50px 0px;margin-top:100px;margin-left:0px;width:0px;height:50px;z-index: 1;position: absolute;background-color: #4a8fd6">
+            </div>
+            <div   style="display:inline ;border:3px solid #21f11c;border-radius:10px 1000px 1000px 10px;margin-top:107px;margin-left:6px;width:0px;height:37px;z-index: 1;position: absolute;background-color: #21f11c">
+            </div>
+            <div   style="display:inline ;border:3px solid #ca16b6;border-radius:12px 1000px 1000px 12px;margin-top:115px;margin-left:12px;width:0px;height:22px;z-index: 1;position: absolute;background-color: #ca16b6">
+            </div>
         </div>
-        <div style="margin-top:-41px;margin-left:66px;width:15%;height:10%;z-index: 1;position: relative;background-color: #4593FD"
-             align="center" onclick="fold()">
-            <font id="foldText" size="2px" style="font-weight: bold">^</font>
+        <div onclick="fold()">
+            <div style="border-radius:5px 5px 29px 29px;margin-top:-41px;margin-left:26%;width:41%;height:5px;z-index: 1;position: absolute;background-color: #4a8fd6">
+            </div>
+            <div style="border-radius:3px 5px 29px 29px;margin-top:-36px;margin-left:28%;width:37%;height:5px;z-index: 1;position: absolute;background-color: #21f11c">
+            </div>
+            <div style="border-radius:5px 5px 16px 16px;margin-top:-31px;margin-left:30%;width:33%;height:5px;z-index: 1;position: absolute;background-color: #ca16b6">
+            </div>
         </div>
     </div>
     <div style="z-index: -1;">
-        <div id="lunbotu" class="templatemo_headerimage">
+        <div id="lunbotu">
             <div class="flexslider">
                 <ul class="slides">
                     <li name="pic" style="display: none">
-                        <img style="width: 99%" src="images/slider/1.png" alt="Slide 1">
+                        <img style="width: 99%;height: 100px" src="images/slider/1.png" alt="Slide 1">
                     </li>
                     <li name="pic">
-                        <img style="width: 99%" src="images/slider/2.png" alt="Slide 2">
+                        <img style="width: 99%;height: 100px" src="images/slider/2.png" alt="Slide 2">
                     </li>
                 </ul>
             </div>
         </div>
 
-        <div style="display:inline">
-            <img style="width: 20%" src="images/work/2.png">
+        <div style="display:inline ;">
+            <img style="width: 100%" src="images/work/2.png">
         </div>
         <div style="display:inline">
-            <img style="width: 20%" src="images/work/3.png">
+            <img style="width: 100%" src="images/work/3.png">
         </div>
         <div style="display:inline">
-            <img style="width: 20%" src="images/work/4.png">
+            <img style="width: 100%" src="images/work/4.png">
         </div>
         <div style="display:inline">
-            <img style="width: 20%" src="images/work/5.png">
+            <img style="width: 100%" src="images/work/5.png">
             .
         </div>
     </div>
@@ -341,19 +344,17 @@
             }
         }
 
-    }, 3000)
+    }, 300000)
 
     function fold() {
         var nav = $("div[name='nav']").css("display");
         var aa = $("#foldText")[0];
         if ("none" == nav) {
-            $("div[name='nav']").css("display","list-item");
-            $("div[name='nav1']").css("display","none");
-            $("#foldText")[0].innerHTML= "^";
+            $("div[name='nav']").css("display", "list-item");
+            $("div[name='nav1']").css("display", "none");
         } else {
             $("div[name='nav1']").css("display", "list-item");
             $("div[name='nav']").css("display", "none");
-            $("#foldText")[0].innerHTML= "v";
         }
     }
 </script>

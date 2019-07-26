@@ -44,9 +44,10 @@ a:hover {
 /*����css*/
 .warpper {
     position: fixed;
-    margin-top: 150px;
+    margin-top: 120px;
     margin-left: 0;
     opacity:0.9;
+    height: 730px;
 }
 
 .menu {
@@ -88,18 +89,19 @@ a:hover {
 }
 
 #nav {
-    width: 190px;
+    width: 130%;
+    height: 50%;
     position: relative;
     top: -41px;
     background: #4593FD;
     z-index: 1;
-    box-shadow: 4px 2px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 4px 0px 5px rgba(0, 0, 0, 0.3);
 }
 
 #nav .mod_cate_hd {
     height: 40px;
     line-height: 40px;
-    font-size: 16px;
+    font-size: 10px;
     color: #FFFFFF;
     text-indent: 7px;
     box-shadow: 2px -1px 3px rgba(55, 55, 55, 0.5);
@@ -109,14 +111,14 @@ a:hover {
 }
 
 #nav .mod_cate, #nav .mod_cate2 {
-    height: 41px;
+    height: 30px;
     border-top: 1px #5AA1FE solid;
     border-bottom: 1px #3487F2 solid;
-    padding: 9px 10px 10px 10px;
+    padding: 2px 3px 5px 4px;
 }
 
 #nav .mod_cate h2, #nav .mod_cate2 h2 {
-    font-size: 14px;
+    font-size: 10px;
     font-weight: normal;
     font-family: "Microsoft Yahei";
 }
@@ -135,15 +137,15 @@ a:hover {
 }
 
 #nav .mod_cate_r {
-    line-height: 24px;
+    line-height: 14px;
     font-style: normal;
     font-variant: normal;
 }
 
 #nav .mod_cate_r a {
-    font-size: 12px;
+    font-size: 9px;
     color: #C2D9F8;
-    padding-right: 5px;
+    padding-right: 0px;
 }
 
 #nav .mod_cate2 {
@@ -156,7 +158,7 @@ a:hover {
 
 #nav .mod_subcate {
     display: none;
-    width: 798px;
+    width: 150%;
     height: 99%;
     border: 2px #4594fd solid;
     background: #FFFFFF;
@@ -164,13 +166,13 @@ a:hover {
     position: absolute;
     top: 0%;
     z-index: -1;
-    left: 188px;
+    left: 100%;
     overflow: hidden;
 }
 
 #nav .mod_subcate_main {
     width: 530px;
-    padding: 0px 20px 1000px 20px;
+    padding: 0px 20px 1000px 5px;
     margin-bottom: -1000px;
     border-right: 1px #ddd solid;
     float: left;
@@ -216,7 +218,7 @@ a:hover {
 #nav .mod_subcate_main dl dd a {
     color: #666;
     font-size: 12px;
-    margin: 0 5px 0 5px;
+    margin: 0px 330px 14px 1px;
     float: left;
     display: inline;
     white-space: nowrap;
