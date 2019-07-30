@@ -29,10 +29,11 @@ public class MyAccessDecisionManager implements AccessDecisionManager {
 
 			String needRole = ca.getAttribute();
 			if ("ROLE_LOGIN".equals(needRole)) {
-				if (authentication instanceof AnonymousAuthenticationToken) {
+				return;
+				/*if (authentication instanceof AnonymousAuthenticationToken) {
 					throw new BadCredentialsException("未登录");
 				} else
-					return;
+					return;*/
 			}
 
 			//遍历当前用户所具有的权限
