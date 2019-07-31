@@ -1,0 +1,133 @@
+[class^="col-"]:not(.pad-no) {
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+}
+
+.panel {
+    border-radius: 2px;
+    border: 0;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    margin-bottom: 15px;
+    background-color: #fff;
+}
+
+.panel .panel-heading, .panel > :first-child {
+    border-top-left-radius: 1px;
+    border-top-right-radius: 1px;
+}
+
+.panel-heading {
+    position: relative;
+    height: 50px;
+    padding: 0;
+    color: #4d627b;
+    border-bottom: 1px solid transparent;
+}
+
+.panel-title {
+    font-weight: 600;
+    padding: 0 20px 0 20px;
+    font-size: 1.2em;
+    line-height: 50px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.panel > .panel-heading:after, .panel.panel-colorful > .panel-heading:after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.panel .panel-footer, .panel > :last-child {
+    border-bottom-left-radius: 1px;
+    border-bottom-right-radius: 1px;
+}
+
+.panel-body {
+    padding: 15px 20px 25px;
+}
+
+.row {
+    margin: 0 -7.5px;
+}
+
+[class^="col-"]:not(.pad-no) {
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+}
+
+.mar-btm {
+    margin-bottom: 15px;
+}
+
+.form-control {
+    font-size: 13px;
+    border-radius: 25px;
+    box-shadow: none;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    transition-duration: .5s;
+}
+
+input {
+    background-image: none !important;
+}
+
+.panel .panel-footer, .panel > :last-child {
+    border-bottom-left-radius: 1px;
+    border-bottom-right-radius: 1px;
+}
+
+.panel-footer {
+    background-color: #fdfdfe;
+    color: #8f9ea6;
+    border-color: rgba(0, 0, 0, 0.02);
+    position: relative;
+}
+
+.btn-default-basic, .btn-default, .btn-default:focus, .btn-default.disabled:hover, .btn-default:disabled:hover, .btn-hover-default:hover, .btn-hover-default:active, .btn-hover-default.active, .btn.btn-active-default:active, .btn.btn-active-default.active, .dropdown.open > .btn.btn-active-default, .btn-group.open .dropdown-toggle.btn.btn-active-default {
+    background-color: #fafafa;
+    border-color: #f5f5f5 !important;
+    color: #8f9ea6;
+}
+
+.btn {
+    cursor: pointer;
+    background-color: transparent;
+    color: inherit;
+    padding: 6px 12px;
+    border-radius: 2px;
+    border: 1px solid transparent;
+    font-size: 13px;
+    line-height: 1.42857;
+    vertical-align: middle;
+    transition: all .25s;
+}
+
+.contactMale {
+    margin-top: 20px;
+    display: inline-block;
+    line-height: 20px;
+    width: 100%;
+    text-align: center;
+    background-image: url('../images/people/3.png');
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.contactFemale {
+    margin-top: 25px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    background-image: url('../images/people/7.png');
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
