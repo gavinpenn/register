@@ -20,9 +20,9 @@
                         <a>新加坡</a>
                     </h2>
                     <p class="mod_cate_r">
-                        <a href="fenyexianshi/xinzhuce.html">注册</a>
-                        <a href="">开户</a>
-                        <a href="">审计</a>
+                        <a href="../fenyexianshi/xinzhuce.html">注册</a>
+                        <a href="../fenyexianshi/xinkaihu.html">开户</a>
+                        <a href="../fenyexianshi/xinshenji.html">审计</a>
                     </p>
 
                     <div class="mod_subcate">
@@ -30,13 +30,12 @@
                             <dl>
                                 <dt>主营业务</dt>
                                 <dd>
-                                    <a href="">新加坡注册</a>
-                                    <a href="">新加坡开户</a>
-                                    <a href="">做账审计</a>
+                                    <a href="../fenyexianshi/xinzhuce.html">新加坡注册</a>
+                                    <a href="../fenyexianshi/xinkaihu.html">新加坡开户</a>
+                                    <a href="../fenyexianshi/xinshenji.html">做账审计</a>
                                     <a href="">认证签证</a>
                                     <a href="">进出口牌照申请</a>
-                                    <a href="">工作准签</a>
-                                    <a href="">创业准签</a>
+                                    <a href="">签证移民</a>
                                 </dd>
                             </dl>
                         </div>
@@ -284,8 +283,24 @@
             </div>
         </div>
     </div>
-    <div style="z-index: -1;width: 100%;height: 150px; overflow:hidden">
-        <div id="lunbotu">
+    <div class="index_top" align="center">
+        <!--<p style="margin-top: 43px">
+            <span style="color: rgb(255, 255, 255); font-size: 20px;">提供一站式企业商业服务</span>
+        </p>
+        <p>
+            <span style="color: rgb(255, 255, 255); font-size: 14px;">致力于为企业提供公司以及商标注册服务</span>
+        </p>
+        <p>
+            <span style="font-size: 18px; line-height: 37.7999992370606px; color: rgb(255, 255, 255); font-family: FangSong_GB2312;">专业 · 便捷&nbsp;· 可靠</span>
+        </p>
+        <p style="display: inline;text-align: left">
+            <span style="color:#ff0000;width: 50%" >商标注册</span>
+        </p>
+        <p style="display: inline">
+            <span style="color: rgb(255, 0, 0);width: 50%">公司注册</span>
+        </p>-->
+
+        <!--<div id="lunbotu">
             <div class="flexslider">
                 <ul class="slides">
                     <li name="pic" style="display: none">˙
@@ -296,24 +311,38 @@
                     </li>
                 </ul>
             </div>
-        </div>
+        </div>-->
+        <img  style="width: 100%;height: 180px;" src="../images/slider/7.png">
     </div>
+    <div class="co">
+        <h2 class="idx-model-title">注册流程</h2>
+        <img  style="width: 100%;height: 180px;" src="../images/liucheng.png" >
+    </div>
+
+
     <div id="co">
         <h>公司概况</h>
         <p>&nbsp;&nbsp;&nbsp;&nbsp;
-            BANGRONG BUSINESS CONSULT LIMITED 是深圳市信桥企业管理有限公司的总公司,总公司于2016年成立.自分公司在2019年成立以来,我们一直秉承着专业的态度和客户优先的服务理念.致力于为每一个客户提供最透明的合作方案、最优惠最安全的建议、最全面优质的服务,。
+            BANGRONG BUSINESS CONSULT LIMITED
+            是深圳市信桥企业管理有限公司的总公司,总公司于2016年成立.自分公司在2019年成立以来,我们一直秉承着专业的态度和客户优先的服务理念.致力于为每一个客户提供最透明的合作方案、最优惠最安全的建议、最全面优质的服务,。
         </p>
+        <img  style="width: 100%;height: 180px;" src="../images/world.png" >
         <h>主营业务</h>
         <p>&nbsp;&nbsp;&nbsp;&nbsp;香港公司，新加坡公司-注册；开户；年审；做账；审计。</p>
         <p>&nbsp;&nbsp;&nbsp;&nbsp;群岛公司以及其它海外公司的注册；开户；年审；做账；审计</p>
         <p>&nbsp;&nbsp;&nbsp;&nbsp;律所和使馆认证服务和移民签证服务。</p>
         <p>&nbsp;&nbsp;&nbsp;&nbsp;全球知识产权业务；商标、专利、条形码等。</p>
         <p>&nbsp;&nbsp;&nbsp;&nbsp;主要金融国家的金融牌照申请和维护。</p>
+        <img  style="width: 100%;height: 260px;" src="../images/adv.png" >
         <h>企业文化</h>
         <p>&nbsp;&nbsp;&nbsp;&nbsp;品牌精神：脚踏实地 行胜于言 敬业报国</p>
         <p>&nbsp;&nbsp;&nbsp;&nbsp;经营理念：合作、共赢、整合、利他、互助、抱团、联盟</p>
         <p>&nbsp;&nbsp;&nbsp;&nbsp;竞争理念：只有合作伙伴，没有竞争对手</p>
         <p>&nbsp;&nbsp;&nbsp;&nbsp;团队理念：将公司打造成军队般的执行力、学校般的学习力、家庭般的幸福工作环境</p>
+    </div>
+    <div class="co" style="border-bottom: 2px solid #eee8d5;">
+        <h2 class="idx-model-title">合作银行</h2>
+        <img  style="width: 100%;height: 180px;" src="../images/bank.png" >
     </div>
     <div id="bottom">
         <div>
@@ -339,7 +368,19 @@
         returnDefault: true
     });
 
-    //轮换图片
+    function fold() {
+        var nav = $("div[name='nav']").css("display");
+        var aa = $("#foldText")[0];
+        if ("none" == nav) {
+            $("div[name='nav']").css("display", "list-item");
+            $("div[name='nav1']").css("display", "none");
+        } else {
+            $("div[name='nav1']").css("display", "list-item");
+            $("div[name='nav']").css("display", "none");
+        }
+    }
+
+    /*//轮换图片
     setInterval(function () {
         var pics = $(".flexslider .slides").find("li");
         var len = pics.length;
@@ -356,18 +397,6 @@
             }
         }
 
-    }, 3000)
-
-    function fold() {
-        var nav = $("div[name='nav']").css("display");
-        var aa = $("#foldText")[0];
-        if ("none" == nav) {
-            $("div[name='nav']").css("display", "list-item");
-            $("div[name='nav1']").css("display", "none");
-        } else {
-            $("div[name='nav1']").css("display", "list-item");
-            $("div[name='nav']").css("display", "none");
-        }
-    }
+    }, 3000)*/
 </script>
 </html>
