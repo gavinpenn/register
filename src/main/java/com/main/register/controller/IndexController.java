@@ -15,7 +15,7 @@ public class IndexController {
         String requestHeader = request.getHeader("user-agent");
         String[] deviceArray = new String[]{"android", "iphone","ipad","windows phone"};
         //判断是否pc端登陆
-        boolean pc = false;
+        boolean pc = true;
         if (requestHeader == null) {
             pc = true;
         }
