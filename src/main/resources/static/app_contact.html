@@ -51,9 +51,7 @@
                     <textarea placeholder="简述想要咨询的问题" rows="13" class="form-control"></textarea>
                 </div>
                 <div class="panel-footer text-right">
-                    <button class="btn btn-default">
-                        发送私信
-                    </button>
+                    <input type="button" class="btn sendMsg" value="发送私信">
                 </div>
             </form>
             <!--===================================================-->
@@ -63,7 +61,7 @@
 </div>
 
 <div align="center">
-    <p class="phoneLine_logo" >
+    <p class="phoneLine_logo">
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● 工作热线&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     </p>
 </div>
@@ -71,32 +69,32 @@
     <div class="contactMale">
         <p style="margin-top: 3%;text-align:right;width: 20%;color:#2196F3; display: inline-block;font-size: 12px;line-height: 20px">
             联系人:</p>
-        <p style="margin-top: 3%;text-align:left;width: 18%;display: inline-block;font-size: 12px;border-bottom: 1px solid #102c80">
+        <p style="margin-top: 3%;text-align:left;width: 18%;display: inline-block;font-size: 12px;border-bottom: 1px solid #0f7fe0bf">
             张大石</p>
         <p style="margin-top: 3%;text-align:right;width: 16%;color:#2196F3; display: inline-block;font-size: 12px;line-height: 20px">
             联系电话:</p>
-        <p style="margin-top: 3%;text-align:left;width: 35%;display: inline-block;font-size: 12px;border-bottom: 1px solid #102c80">
+        <p style="margin-top: 3%;text-align:left;width: 35%;display: inline-block;font-size: 12px;border-bottom: 1px solid #0f7fe0bf">
             +86 18699284756</p>
     </div>
     <div class="contactFemale">
         <p style="margin-top: 3%;text-align:right;width: 20%;color:#2196F3; display: inline-block;font-size: 12px;line-height: 20px">
             联系人:</p>
-        <p style="margin-top: 3%;text-align:left;width: 18%;display: inline-block;font-size: 12px;border-bottom: 1px solid #102c80">
+        <p style="margin-top: 3%;text-align:left;width: 18%;display: inline-block;font-size: 12px;border-bottom: 1px solid #0f7fe0bf">
             张美丽</p>
         <p style="margin-top: 3%;text-align:right;width: 16%;color:#2196F3; display: inline-block;font-size: 12px;line-height: 20px">
             联系电话:</p>
-        <p style="margin-top: 3%;text-align:left;width: 35%;display: inline-block;font-size: 12px;border-bottom: 1px solid #102c80">
+        <p style="margin-top: 3%;text-align:left;width: 35%;display: inline-block;font-size: 12px;border-bottom: 1px solid #0f7fe0bf">
             +86 18633569875</p>
     </div>
 
     <div class="contactFemale">
         <p style="margin-top: 3%;text-align:right;width: 20%;color:#2196F3; display: inline-block;font-size: 12px;line-height: 20px">
             联系人:</p>
-        <p style="margin-top: 3%;text-align:left;width: 18%;display: inline-block;font-size: 12px;border-bottom: 1px solid #102c80">
+        <p style="margin-top: 3%;text-align:left;width: 18%;display: inline-block;font-size: 12px;border-bottom: 1px solid #0f7fe0bf">
             公司座机</p>
         <p style="margin-top: 3%;text-align:right;width: 16%;color:#2196F3; display: inline-block;font-size: 12px;line-height: 20px">
             联系电话:</p>
-        <p style="margin-top: 3%;text-align:left;width: 35%;display: inline-block;font-size: 12px;border-bottom: 1px solid #102c80">
+        <p style="margin-top: 3%;text-align:left;width: 35%;display: inline-block;font-size: 12px;border-bottom: 1px solid #0f7fe0bf">
             +86 0755-12345678</p>
     </div>
 </div>
@@ -131,5 +129,19 @@
         templatecss.setAttribute("href", "css/" + templatevalue + ".css");
         document.getElementsByTagName("form")[0].setAttribute("class", templatevalue);
     }
+
+    $(".sendMsg").bind("click", function () {
+        alert("发送成功,60秒后可再次发送私信!");
+        var time = 60;
+        window.interval = setInterval(function () {
+            if (time < 0) {
+                $(".sendMsg").attr("value", "发送私信");
+                clearInterval(window.interval);
+            } else {
+                $(".sendMsg").attr("value", "等待" + time + "秒");
+                time--;
+            }
+        }, 1000);
+    })
 </script>
 </html>

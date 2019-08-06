@@ -70,7 +70,7 @@
     font-size: 13px;
     border-radius: 25px;
     box-shadow: none;
-    border: 1px solid rgba(0, 0, 0, 0.08);
+    border: 1px solid #0f7fe047;
     transition-duration: .5s;
 }
 
@@ -98,10 +98,10 @@ input {
 
 .btn {
     cursor: pointer;
-    background-color: transparent;
-    color: inherit;
+    background-color: dodgerblue;
+    color: aliceblue;
     padding: 6px 12px;
-    border-radius: 2px;
+    border-radius: 26px;
     border: 1px solid transparent;
     font-size: 13px;
     line-height: 1.42857;
@@ -231,4 +231,9 @@ body {
     line-height: 34px;
     text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.7);
     padding: 3px;
+}
+
+.btn:hover, .btn:focus {
+    color: aliceblue;
+    text-decoration: none;
 }
