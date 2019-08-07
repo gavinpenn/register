@@ -17,16 +17,17 @@
     height: 16px;
     line-height: 16px;
     margin: 0 0 8px;
+    font-weight: bold;
 }
 
 p {
-    font-size: 12px;
+    font-size: 13px;
     color: #6b4aee;
     line-height: 30px;
 }
 p1 {
     font-size: 12px;
-    color: pink;
+    color: #fb95a7;
     line-height: 15px;
     font-style: italic;
     display: block;
