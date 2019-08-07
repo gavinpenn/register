@@ -1,0 +1,26 @@
+._img {
+    width: 100%;
+    height: auto;
+}
+
+.content {
+    margin-top: 17px;
+    border-top: 2px solid #eee8d5;
+    padding: 70px;
+}
+
+.idx-model-title {
+    border-left: 3px solid #ff8040;
+    padding: 0 0 0 8px;
+    font-size: 15px;
+    color: #333;
+    height: 16px;
+    line-height: 16px;
+    margin: 0 0 8px;
+}
+
+p {
+    font-size: 12px;
+    color: #6b4aee;
+    line-height: 30px;
+}
