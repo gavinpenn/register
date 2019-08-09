@@ -11,7 +11,7 @@
 </head>
 <body style="">
 <div align="left">
-    <h1 style="border: 0 none;font-size: 1.1em;font-weight: 300;text-transform: uppercase;color: #8f9ea6;margin: 0;padding: 10px 0 5px;display: block;white-space: nowrap;text-overflow: ellipsis;">
+    <h1 class="top_title">
         &nbsp;&nbsp;欢迎通过以下方式与我们取得联系</h1>
 </div>
 <div style="margin-top: 2%;height: 40px;text-align: center">
@@ -101,23 +101,17 @@
 <div style="border-bottom: 2px solid #eee8d5;margin-top: 4%" align="center">
     <p class="co_position">● 公司地点</p>
     <p class="icon-map"></p>
+    <p style="clear: both" class="top_title">广东省深圳市福田区八卦二路工艺商务大厦253室</p>
 </div>
-<div id="allmap" style="float: left;margin-left:-1%;width: 100%;height: 50%;overflow: hidden;"></div>
+<div id="allmap" class="allmap"></div>
 </body>
 <script>
     $(document).ready(function () {
-        // 百度地图API功能
-        var map = new BMap.Map("allmap");    // 创建Map实例
-        map.centerAndZoom(new BMap.Point(116.404, 39.915), 11);  // 初始化地图,设置中心点坐标和地图级别
-        //添加地图类型控件
-        map.addControl(new BMap.MapTypeControl({
-            mapTypes: [
-                BMAP_NORMAL_MAP,
-                BMAP_HYBRID_MAP
-            ]
-        }));
-        map.setCurrentCity("北京");          // 设置地图显示的城市 此项是必须设置的
-        map.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放
+        var map = new BMap.Map("allmap");//创建map实例
+        var point = new BMap.Point(114.102815, 22.566638);//创建地图坐标点,一般首次创建的这个点为地图的中心坐标点
+        map.centerAndZoom(point, 20);//初始化地图，设置中心坐标点和地图级数
+        var marker = new BMap.Marker(point);//创建标注
+        map.addOverlay(marker);//方法addOverlay() 向地图中添加覆盖物
         $("#allmap").css("position", "absolute");
     })
 
@@ -131,17 +125,19 @@
     }
 
     $(".sendMsg").bind("click", function () {
-        alert("发送成功,60秒后可再次发送私信!");
-        var time = 60;
-        window.interval = setInterval(function () {
-            if (time < 0) {
-                $(".sendMsg").attr("value", "发送私信");
-                clearInterval(window.interval);
-            } else {
-                $(".sendMsg").attr("value", "等待" + time + "秒");
-                time--;
-            }
-        }, 1000);
+        if ("发送私信" == $(".sendMsg").attr("value")) {
+            alert("发送成功,60秒后可再次发送私信!");
+            var time = 60;
+            window.interval = setInterval(function () {
+                if (time < 0) {
+                    $(".sendMsg").attr("value", "发送私信");
+                    clearInterval(window.interval);
+                } else {
+                    $(".sendMsg").attr("value", "等待" + time + "秒");
+                    time--;
+                }
+            }, 1000);
+        }
     })
 </script>
 </html>
