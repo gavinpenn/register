@@ -117,8 +117,8 @@ div span:first-child{
     margin-top: -5%;
 }
 .pic_content img {
-    height: 380px;
-    width: 700px
+    height: auto;
+    width: 85%;
 }
 .ul_pic_content img {
     width: 20%;
