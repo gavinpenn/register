@@ -62,7 +62,7 @@ p {
     margin: 0 auto;
     z-index: 999;
     position: relative;
-    top: -45px;
+    top: 0px;
     background-color: #FFFFFF;
     border-top: 2px solid #22BEFF;
     border-left: 2px solid #22BEFF;
@@ -117,4 +117,5 @@ span {
 }
 .ul_pic_content img {
     width: 20%;
+    margin-top: -50px;
 }
