@@ -1,0 +1,120 @@
+td {
+    width: 450px;
+}
+
+table thead tr td {
+    width: 450px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+td:first-child {
+    width: 94px;
+    text-align: center;
+}
+
+table {
+    padding: 20px;
+}
+
+.worktime {
+    background-color: #80808038;
+    text-align: center;
+}
+
+.data {
+    background-color: #0080002e;
+}
+
+.country {
+    background-color: #1d7ad95c;
+}
+
+.special {
+    background-color: #ffff0026;
+}
+
+p {
+    text-indent: 2em
+}
+
+.top_title {
+    border: 0 none;
+    font-size: 1.1em;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #8f9ea6;
+    margin: 0;
+    padding: 10px 0 5px;
+    display: block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.pub_title {
+    margin: 100px 0 50px 0;
+}
+
+.pub_titleCont {
+    display: block;
+    width: 250px;
+    float: none;
+    margin: 0 auto;
+    z-index: 999;
+    position: relative;
+    top: -45px;
+    background-color: #FFFFFF;
+    border-top: 2px solid #22BEFF;
+    border-left: 2px solid #22BEFF;
+    border-right: 2px solid #22BEFF;
+}
+
+.pub_titleCont h3 {
+    color: #444;
+}
+
+.pub_titleCont p {
+    font-size: 16px;
+    color: #666666;
+    margin-top: 5px;
+    font-style: italic;
+    display: block; /*设置为块级元素会独占一行形成上下居中的效果*/
+    position: relative;
+}
+
+.pub_titleCont p:before, .pub_titleCont p:after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    background: #22BEFF;
+    width: 9%;
+    height: 2px;
+}
+
+.pub_titleCont p:before {
+    left: -0.7%; /*调整背景横线的左右距离*/
+}
+
+.pub_titleCont p:after {
+    right: -1%;
+}
+
+span {
+    display: block;
+    text-indent: 2em;
+    line-height: 25px;
+    font-size: 16px;
+    color: #666;
+}
+
+.text_content, .pic_content {
+    padding: 10%;
+    padding-top: 0%;
+    margin-top: -5%;
+}
+.pic_content img {
+    width: 100%;
+}
+.ul_pic_content img {
+    width: 20%;
+}
