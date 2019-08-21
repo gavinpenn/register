@@ -132,8 +132,106 @@ ul li span1:before {
 }
 
 .bottom-menu {
-    //background-color: #5ba1bd;
+/ / background-color: #5ba1bd;
     border-radius: 20px;
     width: 99%;
     padding: 20px;
 }
+
+.zhuce_text {
+    padding: 50px;
+}
+
+.zhuce_text span1 {
+    margin-top: 40px;
+    padding-left: 50px;
+}
+
+.text_content span1 {
+    padding: 0px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.zhuce_text span2 {
+    color: #53b8d6;
+}
+
+.pub_title {
+    margin: 100px 0 50px 0;
+}
+
+.pub_titleCont {
+    display: block;
+    width: 320px;
+    float: none;
+    margin: 0 auto;
+    z-index: 999;
+    position: relative;
+    top: 0px;
+    background-color: #FFFFFF;
+    border-top: 2px solid #22BEFF;
+    border-left: 2px solid #22BEFF;
+    border-right: 2px solid #22BEFF;
+}
+
+.pub_titleCont h3 {
+    color: #444;
+}
+
+.pub_titleCont p {
+    font-size: 16px;
+    color: #666666;
+    margin-top: 5px;
+    font-style: italic;
+    display: block;
+    position: relative;
+}
+
+.pub_titleCont p:before, .pub_titleCont p:after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    background: #22BEFF;
+    width: 9%;
+    height: 2px;
+}
+
+.pub_titleCont p:before {
+    left: -0.7%; /*调整背景横线的左右距离*/
+}
+
+.pub_titleCont p:after {
+    right: -1%;
+}
+
+.nevada:after{
+    content: '';
+    background: url('../images/nevada.jpg') no-repeat top left /205px 198px; /*兼容没测*/
+    position: absolute;
+    top: -63px;
+    width: 224px;
+    height: 200px;
+    margin-left: 198px;
+}
+
+.california:after {
+    content: '';
+    background: url('../images/california.jpg') no-repeat top left /224px 210px; /*兼容没测*/
+    position: absolute;
+    top: -63px;
+    width: 224px;
+    height: 224px;
+    margin-left: 198px;
+}
+
+.Delaware:after {
+    content: '';
+    background: url('../images/Delaware.jpg') no-repeat top left /224px 210px; /*兼容没测*/
+    position: absolute;
+    top: -63px;
+    width: 224px;
+    height: 224px;
+    margin-left: 198px;
+}
+
