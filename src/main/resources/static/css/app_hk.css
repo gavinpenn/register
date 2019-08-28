@@ -3,6 +3,13 @@
     height: auto;
 }
 
+._img_ {
+    width: 350px;
+    display: inline-block;
+    margin-left: 50px;
+    height: 182px;
+}
+
 .content {
     margin-top: 17px;
     border-top: 2px solid #eee8d5;
@@ -69,4 +76,8 @@ h3 {
     padding-top: 30px;
     line-height: 40px;
     font-size: 20px;
+}
+
+.shadow {
+    border-radius: 70px 70px 100px 100px;
 }

@@ -1,0 +1,56 @@
+.idx-model-title {
+    border-left: 3px solid #ff8040;
+    padding: 0 0 0 8px;
+    font-size: 27px;
+    color: #333;
+    height: 16px;
+    line-height: 16px;
+    margin: 0 0 8px;
+}
+
+.mainDiv {
+    padding: 40px;
+}
+
+span {
+    display: block;
+    word-wrap: break-word;
+    word-break: break-all;
+    white-space: pre-wrap !important;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+.introduce{
+    text-indent: 2em;
+}
+
+.subText {
+    display: block;
+    text-align: left;
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-top: 30px;
+}
+
+.subDiv {
+    margin-top: 100px;
+}
+
+.content-img {
+    margin-top: 100px;
+}
+
+.logo:after {
+    content: '';
+    background: url('../images/brand-pic3.jpg') no-repeat top left /161px 100px; /*兼容没测*/
+    position: absolute;
+    top: -46px;
+    width: 200px;
+    height: 224px;
+    margin-left: 518px;
+}
+
+span1 {
+    color: #1d7ad9;
+}
