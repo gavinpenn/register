@@ -38,10 +38,10 @@ span {
 
 .logo:after {
     content: '';
-    background: url('../images/brand-pic3.jpg') no-repeat top left /161px 100px; /*兼容没测*/
+    background: url(../images/brand-pic3.jpg) no-repeat top left /55px 48px;
     position: absolute;
-    top: -46px;
-    width: 200px;
-    height: 224px;
-    margin-left: 518px;
+    top: -17px;
+    width: 55px;
+    height: 48px;
+    margin-left: 329px;
 }
