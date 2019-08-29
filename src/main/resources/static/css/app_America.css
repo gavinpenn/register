@@ -1,3 +1,7 @@
+
+img{
+    width: 100%;
+}
 .func div {
     display: inline-block;
     margin-left: 30px;
@@ -6,25 +10,25 @@
 span {
     display: block;
     text-indent: 2em;
-    line-height: 40px;
-    font-size: 20px;
+    line-height: 30px;
+    font-size: 10px;
     color: #c4c4c4;
 }
 
 span1 {
     display: block;
     text-indent: 2em;
-    line-height: 40px;
-    font-size: 20px;
+    line-height: 30px;
+    font-size: 10px;
     color: #c4c4c4;
     text-align: left;
-    padding-left: 13%;
+    //padding-left: 13%;
 }
 
 h {
     display: block;
-    line-height: 90px;
-    font-size: 40px;
+    line-height: 50px;
+    font-size: 20px;
     color: #6395d2;
     font-family: 楷体;
     font-weight: bold;
@@ -32,9 +36,9 @@ h {
 }
 
 .introduce {
-    padding-left: 165px;
-    padding-right: 165px;
-    padding-top: 80px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 30px;
     padding-bottom: 100px;
 }
 
@@ -60,7 +64,7 @@ ul li {
 }
 
 ul li span {
-    font-size: 33px;
+    font-size: 14px;
     margin-top: 20px;
     font-family: 楷体;
     font-weight: bold;
@@ -68,18 +72,19 @@ ul li span {
 }
 
 ul li span1 {
-    font-size: 28px;
+    font-size: 14px;
     font-family: 楷体;
     line-height: 70px;
     color: #422c2c;
+    margin-left: 20px;
 }
 
 ul li span1:before {
     content: "• ";
-    font-size: 41px;
+    font-size: 24px;
     color: #9fdff9;
     margin-top: 2px;
-    margin-left: -85px;
+    margin-left: -37px;
     position: absolute;
 }
 
@@ -87,20 +92,21 @@ ul li span1:before {
     display: block;
     padding-top: 30px;
     padding-left: 0px;
+    margin-left: 170px;
 }
 
 .arrow_box {
     display: inline-block;
     background-color: #8fd9f7;
     text-align: center;
-    padding-top: 20px;
-    border-radius: 20px;
+    padding-top: 5px;
+    border-radius: 10px;
     position: relative;
     border: 1px solid #c2e1f5;
-    width: 230px;
-    height: 100px;
+    width: 105px;
+    height: 51px;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
-    margin: 50px;
+    margin-top: 71px;
     float: left;
 }
 
@@ -139,12 +145,14 @@ ul li span1:before {
 }
 
 .zhuce_text {
-    padding: 50px;
+    padding-left: 10%;
+    padding-right: 10%;
+
 }
 
 .zhuce_text span1 {
     margin-top: 40px;
-    padding-left: 50px;
+   // padding-left: 50px;
 }
 
 .text_content span1 {
@@ -163,7 +171,7 @@ ul li span1:before {
 
 .pub_titleCont {
     display: block;
-    width: 320px;
+    width: 183px;
     float: none;
     margin: 0 auto;
     z-index: 999;
@@ -177,10 +185,11 @@ ul li span1:before {
 
 .pub_titleCont h3 {
     color: #444;
+    font-size: 13px;
 }
 
 .pub_titleCont p {
-    font-size: 16px;
+    font-size: 10px;
     color: #666666;
     margin-top: 5px;
     font-style: italic;
@@ -207,32 +216,32 @@ ul li span1:before {
 
 .nevada:after{
     content: '';
-    background: url('../images/nevada.jpg') no-repeat top left /205px 198px; /*兼容没测*/
+    background: url('../images/nevada.jpg') no-repeat top left /100px 100px; /*兼容没测*/
     position: absolute;
-    top: -63px;
+    top: -21px;
     width: 224px;
     height: 200px;
-    margin-left: 198px;
+    margin-left: 100px;
 }
 
 .california:after {
     content: '';
-    background: url('../images/california.jpg') no-repeat top left /224px 210px; /*兼容没测*/
+    background: url('../images/california.jpg') no-repeat top left /100px 100px; /*兼容没测*/
     position: absolute;
-    top: -63px;
+    top: -21px;
     width: 224px;
     height: 224px;
-    margin-left: 198px;
+    margin-left: 100px;
 }
 
 .Delaware:after {
     content: '';
-    background: url('../images/Delaware.jpg') no-repeat top left /224px 210px; /*兼容没测*/
+    background: url('../images/Delaware.jpg') no-repeat top left /100px 100px; /*兼容没测*/
     position: absolute;
-    top: -63px;
+    top: -21px;
     width: 224px;
     height: 224px;
-    margin-left: 198px;
+    margin-left: 100px;
 }
 
 .zhuanzhang:after {

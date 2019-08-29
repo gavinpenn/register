@@ -26,10 +26,9 @@ a:hover {
     text-decoration: underline;
 }
 
-
 #nav {
     width: 120px;
-   // height: 365px;
+    height: 100%;
     position: relative;
     top: -41px;
     background: #4593FD;
@@ -59,7 +58,7 @@ a:hover {
     margin-top: 120px;
     margin-left: 0;
     opacity: 0.9;
-    height: 730px;
+    height: auto;
 }
 
 .menu {
@@ -100,7 +99,6 @@ a:hover {
     text-decoration: none;
 }
 
-
 #nav .mod_cate_hd {
     height: 40px;
     line-height: 40px;
@@ -115,7 +113,7 @@ a:hover {
 
 #nav .mod_cate, #nav .mod_cate2 {
     width: 88px;
-    height: 30px;
+    height: 40px;
     border-top: 1px #5AA1FE solid;
     border-bottom: 1px #3487F2 solid;
     padding: 2px 3px 5px 4px;
@@ -147,9 +145,10 @@ a:hover {
 }
 
 #nav .mod_cate_r a {
-    font-size: 9px;
+    font-size: 11px;
     color: #C2D9F8;
     padding-right: 0px;
+    line-height: 23px;
 }
 
 #nav .mod_cate2 {
@@ -275,8 +274,8 @@ a:hover {
 }
 
 #nav .on {
-    width: 83px;
-    height: 30px;
+    width: 88px;
+    height: 40px;
     border-top: 1px #5AA1FE solid;
     border-bottom: 1px #3487F2 solid;
     padding: 2px 3px 5px 4px;

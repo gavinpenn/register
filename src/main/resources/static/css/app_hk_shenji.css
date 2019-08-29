@@ -1,14 +1,14 @@
-._img {
+.selfContent ._img {
     width: 100%;
     height: auto;
 }
 
-.content {
-    margin-top: 17px;
-    padding: 70px;
+.selfContent .content {
+    margin-top: 100px;
+    padding: 0px;
 }
 
-.idx-model-title {
+.selfContent .idx-model-title {
     border-left: 3px solid #ff8040;
     padding: 0 0 0 8px;
     font-size: 15px;
@@ -19,13 +19,13 @@
     font-weight: bold;
 }
 
-p {
+.selfContent p {
     font-size: 13px;
     color: #6b4aee;
     line-height: 30px;
 }
 
-p1 {
+.selfContent p1 {
     font-size: 12px;
     color: #fb95a7;
     line-height: 15px;
@@ -37,76 +37,77 @@ p1 {
     -webkit-margin-end: 0px;
 }
 
-h {
+.selfContent h {
     font-family: 宋体;
-    font-size: 60px;
-    line-height: 60px;
+    font-size: 30px;
+    line-height: 20px;
     font-weight: bold;
 }
 
-.text-content {
+.selfContent .text-content {
     margin-top: 100px;
     text-align: center;
 }
 
-h1 {
+.selfContent h1 {
     color: darkgrey;
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 10px;
+    line-height: 10px;
 }
 
-h2 {
+.selfContent h2 {
     font-family: 宋体;
-    font-size: 35px;
+    font-size: 20px;
     font-weight: bold;
     color: #615151;
 }
 
-h3 {
-    padding-left: 150px;
-    padding-right: 150px;
-    padding-top: 30px;
-    line-height: 40px;
-    font-size: 20px;
+.selfContent h3 {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 0px;
+    line-height: 20px;
+    font-size: 10px;
     text-align: left;
+    text-indent: 2em;
 }
 
-li img {
-    width: 200px;
-    height: 150px;
+.selfContent li img {
+    width: 100px;
+    height: 90px;
 }
 
-li {
+.selfContent li {
     width: 30%;
     list-style: none; /* 将默认的列表符号去掉 */
     display: inline-block;
     position: relative;
 }
 
-.li1:after{
+.selfContent .li1:after{
     content: "商业资料填写登记";
     position: absolute;
-    font-size: 20px;
-    margin-top: 172px;
-    margin-left: -176px;
+    font-size: 4px;
+    margin-top: 94px;
+    margin-left: -98px;
 }
 
-.li2:after {
+.selfContent .li2:after {
     content: " 公司资料认证";
     position: absolute;
-    font-size: 20px;
-    margin-top: 172px;
-    margin-left: -154px;
+    font-size: 4px;
+    margin-top: 94px;
+    margin-left: -86px;
 }
 
-.li3:after {
+.selfContent .li3:after {
     content: " 递交审计报告";
     position: absolute;
-    font-size: 20px;
-    margin-top: 172px;
-    margin-left: -154px;
+    font-size: 4px;
+    margin-top: 94px;
+    margin-left: -86px;
 }
 
-span {
+.selfContent span {
     color: #1d7ad9;
 }

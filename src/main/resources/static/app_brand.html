@@ -2,12 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1">
     <title>商标</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link href="./css/app_brand.css" rel="stylesheet" type="text/css">
     <script type="text/javascript" src="./js/jquery1.42.min.js"></script>
 </head>
 <body>
+<div id="navDiv"></div>
 <div align="center">
     <img src="images/brand-top.jpg" style="width: 100%">
 </div>
@@ -65,16 +67,19 @@
     </div>
 
     <div class="content-img" align="center">
-        <img src="images/brand-pic1.png" style="width: 95%">
+        <img src="images/brand-pic1.png" style="width: 100%">
     </div>
 
 
     <div class="subDiv">
-        <h2 class="idx-model-title">我司提供全球范围内的商标注册服务，7天*24小时为您服务!</h2>
+        <h2 class="idx-model-title">提供全球范围内的商标注册服务</h2>
         <div align="center">
-            <img src="images/brand-pic2.jpg" style="width: 70%">
+            <img src="images/brand-pic2.jpg" style="width: 95%">
         </div>
     </div>
 </div>
 </body>
+<script>
+    $("#navDiv").load("../nav.html");
+</script>
 </html>

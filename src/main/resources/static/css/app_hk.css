@@ -1,22 +1,30 @@
-._img {
+.selfContent ._img {
     width: 100%;
     height: auto;
 }
 
-._img_ {
-    width: 350px;
+.selfContent ._img_ {
+    width: 150px;
     display: inline-block;
-    margin-left: 50px;
-    height: 182px;
+    margin-left: 23px;
+    height: 70px;
 }
 
-.content {
+.selfContent .content {
     margin-top: 17px;
     border-top: 2px solid #eee8d5;
     padding: 70px;
 }
 
-.idx-model-title {
+.selfContent .zc_content {
+    margin-top: 17px;
+    border-top: 2px solid #eee8d5;
+    padding: 0px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.selfContent .idx-model-title {
     border-left: 3px solid #ff8040;
     padding: 0 0 0 8px;
     font-size: 15px;
@@ -27,13 +35,13 @@
     font-weight: bold;
 }
 
-p {
+.selfContent p {
     font-size: 13px;
     color: #6b4aee;
     line-height: 30px;
 }
 
-p1 {
+.selfContent p1 {
     font-size: 12px;
     color: #fb95a7;
     line-height: 15px;
@@ -45,32 +53,32 @@ p1 {
     -webkit-margin-end: 0px;
 }
 
-h {
+.selfContent h {
     font-family: 宋体;
-    font-size: 60px;
-    line-height: 60px;
+    font-size: 20px;
+    line-height: 0px;
     font-weight: bold;
 }
 
-.text-content {
+.selfContent .text-content {
     margin-top: 100px;
     text-align: center;
 }
 
-h1 {
+.selfContent h1 {
     color: darkgrey;
     font-size: 20px;
     line-height: 30px;
 }
 
-h2 {
+.selfContent h2 {
     font-family: 宋体;
     font-size: 35px;
     font-weight: bold;
     color: #615151;
 }
 
-h3 {
+.selfContent h3 {
     padding-left: 150px;
     padding-right: 150px;
     padding-top: 30px;
@@ -78,6 +86,6 @@ h3 {
     font-size: 20px;
 }
 
-.shadow {
+.selfContent .shadow {
     border-radius: 70px 70px 100px 100px;
 }

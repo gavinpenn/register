@@ -1,44 +1,44 @@
-td {
+.selfContent td {
     width: 450px;
 }
 
-table thead tr td {
+.selfContent table thead tr td {
     width: 450px;
     text-align: center;
     font-weight: bolder;
 }
 
-td:first-child {
+.selfContent td:first-child {
     width: 94px;
     text-align: center;
 }
 
-table {
+.selfContent table {
     padding: 20px;
 }
 
-.worktime {
+.selfContent .worktime {
     background-color: #80808038;
     text-align: center;
 }
 
-.data {
+.selfContent .data {
     background-color: #0080002e;
 }
 
-.country {
+.selfContent .country {
     background-color: #1d7ad95c;
 }
 
-.special {
+.selfContent .special {
     background-color: #ffff0026;
 }
 
-p {
+.selfContent p {
     text-indent: 2em
 }
 
-.top_title {
+.selfContent .top_title {
     border: 0 none;
     font-size: 1.1em;
     font-weight: 300;
@@ -51,11 +51,11 @@ p {
     text-overflow: ellipsis;
 }
 
-.pub_title {
+.selfContent .pub_title {
     margin: 100px 0 50px 0;
 }
 
-.pub_titleCont {
+.selfContent .pub_titleCont {
     display: block;
     width: 250px;
     float: none;
@@ -69,12 +69,13 @@ p {
     border-right: 2px solid #22BEFF;
 }
 
-.pub_titleCont h3 {
+.selfContent .pub_titleCont h3 {
+    font-size: 20px;
     color: #444;
 }
 
-.pub_titleCont p {
-    font-size: 16px;
+.selfContent .pub_titleCont p {
+    font-size: 12px;
     color: #666666;
     margin-top: 5px;
     font-style: italic;
@@ -82,7 +83,7 @@ p {
     position: relative;
 }
 
-.pub_titleCont p:before, .pub_titleCont p:after {
+.selfContent .pub_titleCont p:before, .selfContent .pub_titleCont p:after {
     content: '';
     position: absolute;
     top: 100%;
@@ -91,37 +92,39 @@ p {
     height: 2px;
 }
 
-.pub_titleCont p:before {
+.selfContent .pub_titleCont p:before {
     left: -0.7%; /*调整背景横线的左右距离*/
 }
 
-.pub_titleCont p:after {
+.selfContent .pub_titleCont p:after {
     right: -1%;
 }
 
-span {
+.selfContent span {
     display: block;
     text-indent: 2em;
     line-height: 25px;
-    font-size: 16px;
+    font-size: 14px;
     color: #666;
 }
 
-div span:first-child{
-    padding-top: 40px;
+.selfContent div span:first-child{
+    padding-top: 0px;
 }
 
-.text_content, .pic_content {
+.selfContent .text_content, .selfContent .pic_content {
     padding: 10%;
     padding-top: 0%;
     margin-top: -5%;
 }
-.pic_content img {
+
+.selfContent .pic_content img {
     height: auto;
-    width: 85%;
+    width: 100%;
 }
-.ul_pic_content img {
-    width: 223px;
-    height: 53px;
-    margin-top: -50px;
+
+.selfContent .ul_pic_content img {
+    width: 34%;
+    height: 33px;
+    margin-top: -36px;
 }

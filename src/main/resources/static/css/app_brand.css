@@ -1,11 +1,11 @@
 .idx-model-title {
     border-left: 3px solid #ff8040;
     padding: 0 0 0 8px;
-    font-size: 27px;
+    font-size: 17px;
     color: #333;
     height: 16px;
     line-height: 16px;
-    margin: 0 0 8px;
+    margin: 0 0px 8px;
 }
 
 .mainDiv {
@@ -17,23 +17,23 @@ span {
     word-wrap: break-word;
     word-break: break-all;
     white-space: pre-wrap !important;
-    font-size: 18px;
-    line-height: 60px;
+    font-size: 10px;
+    line-height: 20px;
 }
 
 .subText {
     display: block;
     text-align: left;
-    margin-left: 15%;
+    margin-left: 7%;
     margin-top: 30px;
 }
 
 .subDiv {
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 .content-img {
-    margin-top: 100px;
+    margin-top: 33px;
 }
 
 .logo:after {
