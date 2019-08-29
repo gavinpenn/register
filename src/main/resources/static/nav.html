@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" >
+    <meta charset="UTF-8">
     <link href="../css/app_nav.css" rel="stylesheet" type="text/css">
     <script src="../js/jquery.SuperSlide.2.1.1.js" type="text/javascript"></script>
 </head>
@@ -312,13 +312,13 @@
         }
     }
 
-    setTimeout(function(){
+    setTimeout(function () {
         var nav = $("div[name='nav']").css("display");
-        if("none" != nav){
+        if ("none" != nav && $("#nav .on").length == 0) {
             $("div[name='nav1']").css("display", "list-item");
             $("div[name='nav']").css("display", "none");
             $("div[name='fold']").css("display", "none");
         }
-    },2000)
+    }, 2000)
 </script>
 </html>
