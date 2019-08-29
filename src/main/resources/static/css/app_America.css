@@ -1,7 +1,8 @@
 
-img{
+img {
     width: 100%;
 }
+
 .func div {
     display: inline-block;
     margin-left: 30px;
@@ -22,7 +23,7 @@ span1 {
     font-size: 10px;
     color: #c4c4c4;
     text-align: left;
-    //padding-left: 13%;
+/ / padding-left: 13 %;
 }
 
 h {
@@ -76,7 +77,16 @@ ul li span1 {
     font-family: 楷体;
     line-height: 70px;
     color: #422c2c;
+    width: 100px;
+}
+
+ul li span2 {
+    font-size: 14px;
+    font-family: 楷体;
+    line-height: 70px;
+    color: #422c2c;
     margin-left: 20px;
+    width: 100px;
 }
 
 ul li span1:before {
@@ -84,7 +94,16 @@ ul li span1:before {
     font-size: 24px;
     color: #9fdff9;
     margin-top: 2px;
-    margin-left: -37px;
+    margin-left: -39px;
+    position: absolute;
+}
+
+ul li span2:before {
+    content: "• ";
+    font-size: 24px;
+    color: #9fdff9;
+    margin-top: 2px;
+    margin-left: -12px;
     position: absolute;
 }
 
@@ -152,7 +171,7 @@ ul li span1:before {
 
 .zhuce_text span1 {
     margin-top: 40px;
-   // padding-left: 50px;
+/ / padding-left: 50 px;
 }
 
 .text_content span1 {
@@ -214,7 +233,7 @@ ul li span1:before {
     right: -1%;
 }
 
-.nevada:after{
+.nevada:after {
     content: '';
     background: url('../images/nevada.jpg') no-repeat top left /100px 100px; /*兼容没测*/
     position: absolute;

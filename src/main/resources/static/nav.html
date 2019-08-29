@@ -277,7 +277,7 @@
         </div>
     </div>
 
-    <div name="nav1" style="display: none">
+    <div name="nav1" style="display: none" class="headerBox">
         <div onclick="fold()" class="fold1">
             <span class="span1"></span>
             <span class="span2"></span>
@@ -312,5 +312,13 @@
         }
     }
 
+    setTimeout(function(){
+        var nav = $("div[name='nav']").css("display");
+        if("none" != nav){
+            $("div[name='nav1']").css("display", "list-item");
+            $("div[name='nav']").css("display", "none");
+            $("div[name='fold']").css("display", "none");
+        }
+    },2000)
 </script>
 </html>
