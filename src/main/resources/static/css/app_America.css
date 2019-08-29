@@ -238,8 +238,8 @@ ul li span2:before {
     background: url('../images/nevada.jpg') no-repeat top left /100px 100px; /*兼容没测*/
     position: absolute;
     top: -21px;
-    width: 224px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     margin-left: 100px;
 }
 
@@ -248,8 +248,8 @@ ul li span2:before {
     background: url('../images/california.jpg') no-repeat top left /100px 100px; /*兼容没测*/
     position: absolute;
     top: -21px;
-    width: 224px;
-    height: 224px;
+    width: 100px;
+    height: 100px;
     margin-left: 100px;
 }
 
@@ -258,47 +258,47 @@ ul li span2:before {
     background: url('../images/Delaware.jpg') no-repeat top left /100px 100px; /*兼容没测*/
     position: absolute;
     top: -21px;
-    width: 224px;
-    height: 224px;
+    width: 100px;
+    height: 100px;
     margin-left: 100px;
 }
 
 .zhuanzhang:after {
     content: '';
-    background: url('../images/zhuanzhang.jpg') no-repeat top left /300px 210px; /*兼容没测*/
+    background: url('../images/zhuanzhang.jpg') no-repeat top left /200px 150px; /*兼容没测*/
     position: absolute;
     top: -63px;
-    width: 300px;
-    height: 224px;
-    margin-left: 170px;
+    width: 200px;
+    height: 150px;
+    margin-left: 93px;
 }
 
 .America-data:after {
     content: '';
-    background: url('../images/America-data.jpg') no-repeat top left /300px 210px; /*兼容没测*/
+    background: url('../images/America-data.jpg') no-repeat top left /100px 100px; /*兼容没测*/
     position: absolute;
-    top: -63px;
-    width: 300px;
-    height: 224px;
-    margin-left: 170px;
+    top: -30px;
+    width: 100px;
+    height: 100px;
+    margin-left: 100px;
 }
 
 .America-adv:after {
     content: '';
     background: url('../images/America-adv.jpg') no-repeat top left /100px 100px; /*兼容没测*/
     position: absolute;
-    top: -8px;
+    top: -21px;
     width: 100px;
-    height: 224px;
-    margin-left: 200px;
+    height: 100px;
+    margin-left: 100px;
 }
 
 .America-time:after {
     content: '';
-    background: url('../images/America-time.gif') no-repeat top left /200px 200px; /*兼容没测*/
+    background: url('../images/America-time.gif') no-repeat top left /100px 100px; /*兼容没测*/
     position: absolute;
-    top: -57px;
-    width: 200px;
-    height: 224px;
-    margin-left: 200px;
+    top: -21px;
+    width: 100px;
+    height: 100px;
+    margin-left: 100px;
 }
