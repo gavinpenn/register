@@ -13,7 +13,7 @@ span {
     text-indent: 2em;
     line-height: 30px;
     font-size: 10px;
-    color: #c4c4c4;
+   // color: #c4c4c4;
 }
 
 span1 {
@@ -21,7 +21,7 @@ span1 {
     text-indent: 2em;
     line-height: 30px;
     font-size: 10px;
-    color: #c4c4c4;
+   // color: #c4c4c4;
     text-align: left;
 / / padding-left: 13 %;
 }
