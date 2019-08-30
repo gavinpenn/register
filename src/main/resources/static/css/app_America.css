@@ -77,7 +77,7 @@ ul li span1 {
     font-family: 楷体;
     line-height: 70px;
     color: #422c2c;
-    width: 100px;
+    margin-left: 40px;
 }
 
 ul li span2 {
@@ -85,8 +85,7 @@ ul li span2 {
     font-family: 楷体;
     line-height: 70px;
     color: #422c2c;
-    margin-left: 80px;
-    width: 100px;
+    margin-left: 65px;
 }
 
 ul li span1:before {
