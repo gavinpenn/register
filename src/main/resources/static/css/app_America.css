@@ -13,7 +13,7 @@ span {
     text-indent: 2em;
     line-height: 30px;
     font-size: 10px;
-   // color: #c4c4c4;
+/ / color: #c4c4c4;
 }
 
 span1 {
@@ -21,7 +21,7 @@ span1 {
     text-indent: 2em;
     line-height: 30px;
     font-size: 10px;
-   // color: #c4c4c4;
+/ / color: #c4c4c4;
     text-align: left;
 / / padding-left: 13 %;
 }
@@ -30,7 +30,7 @@ h {
     display: block;
     line-height: 50px;
     font-size: 20px;
-    color: #6395d2;
+    color: darkgray;
     font-family: 楷体;
     font-weight: bold;
     text-align: center;
@@ -52,7 +52,7 @@ h {
     border-bottom: 2px solid #eee8d5;
 }
 
-ul li span, ul li span1, ul li div {
+ul li span, ul li span1 {
     display: inline;
     list-style: disc;
 
@@ -61,7 +61,7 @@ ul li span, ul li span1, ul li div {
 ul li {
     list-style: none;
     border-bottom: 1px solid #9fdff9;
-    height: 230px;
+/ / height: 230 px;
 }
 
 ul li span {
@@ -73,7 +73,7 @@ ul li span {
 }
 
 ul li span1 {
-    font-size: 14px;
+    font-size: 15px;
     font-family: 楷体;
     line-height: 70px;
     color: #422c2c;
@@ -85,33 +85,30 @@ ul li span2 {
     font-family: 楷体;
     line-height: 70px;
     color: #422c2c;
-    margin-left: 20px;
+    margin-left: 80px;
     width: 100px;
 }
 
 ul li span1:before {
     content: "• ";
     font-size: 24px;
-    color: #9fdff9;
-    margin-top: 2px;
-    margin-left: -39px;
+    color: #6a9ff9;
+    margin-top: 0px;
+    margin-left: -43px;
     position: absolute;
 }
 
 ul li span2:before {
     content: "• ";
     font-size: 24px;
-    color: #9fdff9;
-    margin-top: 2px;
-    margin-left: -12px;
+    color: #6a9ff9;
+    margin-top: 0px;
+    margin-left: -14px;
     position: absolute;
 }
 
 .details {
-    display: block;
-    padding-top: 30px;
-    padding-left: 0px;
-    margin-left: 170px;
+    padding-left: 40px
 }
 
 .arrow_box {
@@ -291,4 +288,23 @@ ul li span2:before {
     width: 100px;
     height: 100px;
     margin-left: 100px;
+}
+
+.bottom-menu ul li {
+    padding: 20px;
+}
+
+
+.bottom-menu ul li div:first-child{
+    background-color: #41b8d9;
+    border-radius: 20px;
+    width: 100%;
+    display: inline-block;
+}
+
+.bottom-menu ul li div:first-child p {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 25px;
 }
