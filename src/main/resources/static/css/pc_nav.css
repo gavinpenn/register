@@ -1,3 +1,13 @@
+
+body, div, ul, li, dl, dt, dd, h2, p {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Lucida Grande", tahoma, arial, ����;
+}
+
 ul {
     list-style: none;
 }
