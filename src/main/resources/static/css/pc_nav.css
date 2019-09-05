@@ -1,12 +1,3 @@
-body, div, ul, li, dl, dt, dd, h2, p {
-    padding: 0;
-    margin: 0;
-}
-
-body {
-    font-family: "Lucida Grande", tahoma, arial, ����;
-}
-
 ul {
     list-style: none;
 }
@@ -23,6 +14,16 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+#nav {
+    width: 140px;
+    height: 492px;
+    position: relative;
+    top: -41px;
+    background: #4593FD;
+    z-index: 1;
+    box-shadow: 4px 0px 5px rgba(0, 0, 0, 0.3);
 }
 
 .clearfix:after {
@@ -43,12 +44,11 @@ a:hover {
 
 /*����css*/
 .warpper {
-    width: 120px;
     position: fixed;
     margin-top: 120px;
     margin-left: 0;
     opacity: 0.9;
-    height: 927px;
+    height: auto;
 }
 
 .menu {
@@ -70,6 +70,7 @@ a:hover {
     display: block;
     width: 29px;
     height: 17px;
+    background: url(../images/hot.png) no-repeat;
     position: absolute;
     left: 50px;
     top: -10px;
@@ -88,16 +89,6 @@ a:hover {
     text-decoration: none;
 }
 
-#nav {
-    width: 130%;
-    height: 50%;
-    position: relative;
-    top: -41px;
-    background: #4593FD;
-    z-index: 1;
-    box-shadow: 4px 0px 5px rgba(0, 0, 0, 0.3);
-}
-
 #nav .mod_cate_hd {
     height: 40px;
     line-height: 40px;
@@ -111,15 +102,15 @@ a:hover {
 }
 
 #nav .mod_cate, #nav .mod_cate2 {
-    width: 123px;
-    height: 41px;
+    width: 88px;
+    height: 40px;
     border-top: 1px #5AA1FE solid;
     border-bottom: 1px #3487F2 solid;
     padding: 2px 3px 5px 4px;
 }
 
 #nav .mod_cate h2, #nav .mod_cate2 h2 {
-    font-size: 13px;
+    font-size: 10px;
     font-weight: normal;
     font-family: "Microsoft Yahei";
 }
@@ -138,15 +129,16 @@ a:hover {
 }
 
 #nav .mod_cate_r {
-    line-height: 16px;
+    line-height: 14px;
     font-style: normal;
     font-variant: normal;
 }
 
 #nav .mod_cate_r a {
-    font-size: 9px;
+    font-size: 11px;
     color: #C2D9F8;
     padding-right: 0px;
+    line-height: 23px;
 }
 
 #nav .mod_cate2 {
@@ -159,8 +151,8 @@ a:hover {
 
 #nav .mod_subcate {
     display: none;
-    width: 340%;
-    height: 99%;
+    width: 700px;
+    height: 492px;
     border: 2px #4594fd solid;
     background: #FFFFFF;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
@@ -219,7 +211,7 @@ a:hover {
 #nav .mod_subcate_main dl dd a {
     color: #666;
     font-size: 12px;
-    margin: 0 5px 0 5px;
+    margin: 0px 18px 14px 1px;
     float: left;
     display: inline;
     white-space: nowrap;
@@ -257,7 +249,7 @@ a:hover {
     height: 0px;
     overflow: hidden;
     font-size: 0px;
-    margin: 9px -24px 0 5px;
+    margin: 16px -32px 0 5px;
     border: 4px transparent dashed;
     border-left: 4px #FFFFFF solid;
 }
@@ -272,8 +264,8 @@ a:hover {
 }
 
 #nav .on {
-    width: 100px;
-    height: 41px;
+    width: 88px;
+    height: 40px;
     border-top: 1px #5AA1FE solid;
     border-bottom: 1px #3487F2 solid;
     padding: 2px 3px 5px 4px;
@@ -343,8 +335,8 @@ a:hover {
 
 .fold {
     border-radius: 4px;
-    margin-top: 14px;
-    margin-left: 13%;
+    margin-top: -41px;
+    margin-left: 24%;
     width: 40%;
     height: 27px;
     z-index: 1;
@@ -394,90 +386,35 @@ a:hover {
     margin-top: 20px;
 }
 
-#bottom {
-    display: block;
-    width: 100%;
-    right: 0;
-    background-color: #ccc;
+@keyframes fade {
+    from {
+        opacity: 1.0;
+    }
+    50% {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1.0;
+    }
 }
 
-#bottom .p1 {
-    white-space: nowrap;
-    color: #666;
-    font-size: 10px;
-    line-height: 20px;
+@-webkit-keyframes fade {
+    from {
+        opacity: 1.0;
+    }
+    50% {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1.0;
+    }
 }
 
-#bottom .p2 {
-    color: #666;
-    font-size: 10px;
-    margin-right: 33px;
-    line-height: 30px;
-    background-image: url('../images/govIcon.gif');
-    background-repeat: no-repeat;
-    background-size: 20px;
-    background-position: 73% 2px
-}
-
-#co, .co {
-    padding: 3%;
-    line-height: 27px;
-    overflow: hidden;
-    border-top: 2px solid #eee8d5;
-    display: block;
-    text-align: center;
-}
-
-#co h {
-    font-size: 22px;
-    line-height: 100px;
-    border-bottom: 2px solid #22BEFF;
-    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.7)
-}
-
-#co p {
-    font-size: 12px;
-    display: block;
-    text-align: center;
-    padding-left: 15%;
-    padding-right: 15%;
-}
-
-#co span {
-    font-size: 12px;
-    display: block;
-    text-align: left;
-    padding-left: 15%;
-    padding-right: 15%;
-}
-
-#co .content {
-    display: inline-block;
-    line-height: 60px;
-}
-
-.index_top {
-    z-index: -1;
-    line-height: 2em;
-}
-
-.index_top img {
-    width: 100%;
-    height: auto;
-}
-
-.idx-model-title {
-    border-left: solid #ff8040;
-    padding: 0 0 0 8px;
-    font-size: 20px;
-    color: #333;
-    height: 16px;
-    line-height: 16px;
-    margin: 0 0 0 130px;
-    text-align: left;
-}
-
-p1{
-    color: #169fd8;
-    font-weight: bolder;
+.headerBox {
+    color: #fff;
+    padding: 10px;
+    font-size: 15px;
+    height: 60px;
+    animation: fade 1000ms infinite;
+    -webkit-animation: fade 1000ms infinite;
 }
